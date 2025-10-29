@@ -75,6 +75,59 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- URSA -->
+              <tr onmouseout="NOVA_stop()" onmouseover="URSA_start()" bgcolor="#ffffd0">
+                <!-- URSA_img -->
+                <td width="25%">
+                  <div class="one">
+                    <div class="two" id="URSA" style="opacity: 0;">
+                      <video width="200" muted="" autoplay="" loop="">
+                        <source src="images/ursa.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src="images/nova.png" width="200">
+                  </div>
+                  <script type="text/javascript">
+                    function URSA_start() {
+                      document.getElementById('URSA').style.opacity = "1";
+                    }
+                    function URSA_stop() {
+                      document.getElementById('URSA').style.opacity = "0";
+                    }
+                    URSA_stop()
+                  </script>
+                </td>
+                <!-- URSA_content -->
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2510.24717">
+                    <span class="papertitle">Uniform Discrete Diffusion with Metric Path for Video Generation</span>
+                  </a>
+                  <br>
+                  <strong>Haoge Deng*</strong>,
+                  <a href="https://scholar.google.com/citations?&user=qQv6YbsAAAAJ">Ting Pan*</a>,
+                  <a href="https://scholar.google.com/citations?user=VsJ39HMAAAAJ">Fan Zhang*</a>,
+                  <a href="https://scholar.google.com/citations?user=9JcQ2hwAAAAJ&hl">Yang Liu*</a>,
+                  <a href="https://scholar.google.com/citations?user=mKQhEsIAAAAJ&hl">Zhuoyan Luo</a>,
+                  <a href="https://scholar.google.com/citations?user=5Ydha2EAAAAJ&hl=zh-CN">Yufeng Cui</a>,
+                  <a href="https://scholar.google.com/citations?user=75OyC-oAAAAJ&hl">Wenxuan Wang</a>,
+                  <a href="https://scholar.google.com/citations?user=Ljk2BvIAAAAJ&hl">Chunhua Shen</a>,
+                  <a href="https://scholar.google.com/citations?user=Vkzd7MIAAAAJ&hl=en">Shiguang Shan</a>,
+                  <a href="https://scholar.google.com/citations?user=qxWfV6cAAAAJ&hl">Zhaoxiang Zhang#</a>,
+                  <a href="https://www.xloong.wang/">Xinlong Wang#</a>
+                  <br>
+                  under review
+                  <br>
+                  <a href="https://arxiv.org/abs/2510.24717">[arxiv]</a> |
+                  <a href="http://bitterdhg.github.io/URSA_page">[project page]</a> |
+                  <a href="https://github.com/baaivision/URSA">[code]</a> |
+                  <a href="https://huggingface.co/papers?date=2025-10-29">[hugging face 🤗 daily papers]</a>
+                  <p>
+                    URSA is a simple yet powerful discrete framework that formulates video generation as an iterative process of global refinement over spatiotemporal tokens, enabling efficient scaling to long-duration videos.
+                  </p>
+                </td>
+              </tr>
+              
               <!-- NOVA -->
               <tr onmouseout="NOVA_stop()" onmouseover="NOVA_start()" bgcolor="#ffffd0">
                 <!-- NOVA_img -->
