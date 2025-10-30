@@ -75,6 +75,48 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              
+              <!-- EMU3.5 -->
+              <tr onmouseout="EMU3_5_stop()" onmouseover="EMU3_5_start()">
+                <!-- EMU3_5_img -->
+                <td width="25%">
+                  <div class="one">
+                    <div class="two" id="EMU3_5" style="opacity: 0;">
+                      <video width="200" muted="" autoplay="" loop="">
+                        <source src="images/emu3_5.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src="images/emu3_5.png" width="200">
+                  </div>
+                  <script type="text/javascript">
+                    function EMU3_5_start() {
+                      document.getElementById('URSA').style.opacity = "1";
+                    }
+                    function EMU3_5_stop() {
+                      document.getElementById('URSA').style.opacity = "0";
+                    }
+                    EMU3_5_stop()
+                  </script>
+                </td>
+                <!-- EMU3_5_content -->
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2510.24717">
+                    <span class="papertitle">Emu3.5: Native Multimodal Models are World Learners</span>
+                  </a>
+                  <br>
+                  <strong>BAAI</strong>
+                  <br>
+                  <br>
+                  <a href="https://arxiv.org/abs/2510.24717">[arxiv]</a> |
+                  <a href="https://emu.world/">[project page]</a> |
+                  <a href="https://github.com/baaivision/Emu3.5">[code]</a>
+                  <p>
+                    Emu3.5 is a natively multimodal world model that unifies vision and language through end-to-end next-token prediction on interleaved video-derived data, enhanced by reinforcement learning and DiDA-based parallel decoding for efficient, spatiotemporally consistent generation.
+                  </p>
+                </td>
+              </tr>
+              
               <!-- URSA -->
               <tr onmouseout="URSA_stop()" onmouseover="URSA_start()">
                 <!-- URSA_img -->
