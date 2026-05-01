@@ -73,6 +73,57 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- UDM-RL -->
+              <tr onmouseout="UDM_RL_stop()" onmouseover="UDM_RL_start()">
+                <!-- UDM_RL_img -->
+                <td width="25%">
+                  <div class="one">
+                    <div class="two" id="UDM_RL" style="opacity: 0;">
+                      <video width="200" muted="" autoplay="" loop="">
+                        <source src="images/udm_rl.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src="images/udm_rl" width="200">
+                  </div>
+                  <script type="text/javascript">
+                    function UDM_RL_start() {
+                      document.getElementById('UDM_RL').style.opacity = "1";
+                    }
+                    function UDM_RL_stop() {
+                      document.getElementById('UDM_RL').style.opacity = "0";
+                    }
+                    URSA_stop()
+                  </script>
+                </td>
+                <!-- UDM_RL_content -->
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2604.18518">
+                    <span class="papertitle">UDM-GRPO: Stable and Efficient Group Relative Policy Optimization for Uniform Discrete Diffusion Models</span>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?&user=qQv6YbsAAAAJ">Jiaqi Wang*</a>,
+                  <strong>Haoge Deng*</strong>,
+                  <a href="https://scholar.google.com/citations?&user=qQv6YbsAAAAJ">Ting Pan*</a>,
+                  <a href="https://scholar.google.com/citations?user=9JcQ2hwAAAAJ&hl">Yang Liu</a>,
+                  <a href="https://scholar.google.com/citations?user=mKQhEsIAAAAJ&hl">Chengyuan Wang</a>,
+                  <a href="https://scholar.google.com/citations?user=VsJ39HMAAAAJ">Fan Zhang</a>,
+                  <a href="https://scholar.google.com.tw/citations?user=pQNpf7cAAAAJ&hl=zh-CN&oi=ao">Yonggang Qi#</a>,
+                  <a href="https://www.xloong.wang/">Xinlong Wang#</a>
+                  <br>
+                   (ICML Spotlight), 2026
+                  <em>International Conference on Machine Learning <b>(ICLR, CCF-A)</b></em>, 2026
+                  (<strong><span style="color:#ff0000;">Spotlight, ~2% acceptance rate</span></strong>)
+                  <br>
+                  <a href="https://arxiv.org/abs/2604.18518">[arxiv]</a> |
+                  <a href="https://yovecent.github.io/UDM-GRPO.github.io/">[project page]</a> |
+                  <a href="https://github.com/Yovecent/UDM-GRPO">[code]</a>
+                  <p>
+                    UDM-GRPO is the first framework to integrate UDM with RL, which treats the final clean sample as the action for stable optimization and reconstructs trajectories via the diffusion forward process to significantly improve base model performance across multiple T2I tasks.
+                  </p>
+                </td>
+              </tr>
+              
               
               <!-- EMU3.5 -->
               <tr onmouseout="EMU3_5_stop()" onmouseover="EMU3_5_start()" bgcolor="#ffffd0">
